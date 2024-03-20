@@ -30,25 +30,28 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<title>Logger Module | Apache SkyWalking</title><meta property="og:title" content="Logger Module" />
-<meta property="og:description" content="Logger Module Logger module is used to configure the system log.
-Configuration    Name Default Environment Key Description     logger.level INFO ROVER_LOGGER_LEVEL The lowest level of printing allowed.    " />
+<title>Common configuration | Apache SkyWalking</title><meta property="og:title" content="Common configuration" />
+<meta property="og:description" content="Common configuration Logger Logger is used to configure the system log.
+   Name Default Environment Key Description     logger.level INFO ROVER_LOGGER_LEVEL The lowest level of printing allowed.    Core Core is used to communicate with the backend server. It provides APIs for other modules to establish connections with the backend.
+   Name Default Environment Key Description     core.cluster_name  ROVER_CORE_CLUSTER_NAME The name of the cluster." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/skywalking-rover/next/en/setup/configuration/logger/" />
+<meta property="og:url" content="/docs/skywalking-rover/next/en/setup/configuration/common/" />
 
-<meta itemprop="name" content="Logger Module">
-<meta itemprop="description" content="Logger Module Logger module is used to configure the system log.
-Configuration    Name Default Environment Key Description     logger.level INFO ROVER_LOGGER_LEVEL The lowest level of printing allowed.    ">
+<meta itemprop="name" content="Common configuration">
+<meta itemprop="description" content="Common configuration Logger Logger is used to configure the system log.
+   Name Default Environment Key Description     logger.level INFO ROVER_LOGGER_LEVEL The lowest level of printing allowed.    Core Core is used to communicate with the backend server. It provides APIs for other modules to establish connections with the backend.
+   Name Default Environment Key Description     core.cluster_name  ROVER_CORE_CLUSTER_NAME The name of the cluster.">
 
-<meta itemprop="wordCount" content="26">
+<meta itemprop="wordCount" content="155">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Logger Module"/>
-<meta name="twitter:description" content="Logger Module Logger module is used to configure the system log.
-Configuration    Name Default Environment Key Description     logger.level INFO ROVER_LOGGER_LEVEL The lowest level of printing allowed.    "/>
+<meta name="twitter:title" content="Common configuration"/>
+<meta name="twitter:description" content="Common configuration Logger Logger is used to configure the system log.
+   Name Default Environment Key Description     logger.level INFO ROVER_LOGGER_LEVEL The lowest level of printing allowed.    Core Core is used to communicate with the backend server. It provides APIs for other modules to establish connections with the backend.
+   Name Default Environment Key Description     core.cluster_name  ROVER_CORE_CLUSTER_NAME The name of the cluster."/>
 
 
 
@@ -66,7 +69,7 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
 
 
-    <title>Logger Module | Apache SkyWalking</title>
+    <title>Common configuration | Apache SkyWalking</title>
   </head>
   <body class="td-page  project-doc">
     <header>
@@ -331,40 +334,6 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     
 
-    <li>
-        
-
-            
-            <a href="#">Design<i class="iconfont icon-arrow-right pull-right"></i></a>
-            
-
-            
-<ul class="sidebar-submenu">
-    
-
-    <li>
-        
-            <a href="/docs/skywalking-rover/next/en/concepts-and-designs/module_design">Module Design</a>
-        
-    </li>
-
-    
-
-    <li>
-        
-            <a href="/docs/skywalking-rover/next/en/concepts-and-designs/project_structue">Project Structure</a>
-        
-    </li>
-
-    
-
-</ul>
-
-        
-    </li>
-
-    
-
 </ul>
 
         
@@ -390,6 +359,14 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     <li>
         
+            <a href="/docs/skywalking-rover/next/en/setup/deployment/kubernetes/readme">Deploy on Kubernetes</a>
+        
+    </li>
+
+    
+
+    <li>
+        
 
             
             <a href="#">Configuration<i class="iconfont icon-arrow-right pull-right"></i></a>
@@ -401,7 +378,7 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     <li>
         
-            <a href="/docs/skywalking-rover/next/en/setup/configuration/logger">Logger Module</a>
+            <a href="/docs/skywalking-rover/next/en/setup/configuration/common">Common</a>
         
     </li>
 
@@ -409,7 +386,7 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     <li>
         
-            <a href="/docs/skywalking-rover/next/en/setup/configuration/core">Core Module</a>
+            <a href="/docs/skywalking-rover/next/en/setup/configuration/service-discovery">Service Discovery</a>
         
     </li>
 
@@ -417,7 +394,7 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     <li>
         
-            <a href="/docs/skywalking-rover/next/en/setup/configuration/process-discovery">Process Discovery Module</a>
+            <a href="/docs/skywalking-rover/next/en/setup/configuration/traffic">Traffic</a>
         
     </li>
 
@@ -425,59 +402,7 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     <li>
         
-            <a href="/docs/skywalking-rover/next/en/setup/configuration/profiling">Profiling Module</a>
-        
-    </li>
-
-    
-
-    <li>
-        
-            <a href="/docs/skywalking-rover/next/en/setup/configuration/accesslog">Access Log Module</a>
-        
-    </li>
-
-    
-
-</ul>
-
-        
-    </li>
-
-    
-
-    <li>
-        
-
-            
-            <a href="#">Examples<i class="iconfont icon-arrow-right pull-right"></i></a>
-            
-
-            
-<ul class="sidebar-submenu">
-    
-
-    <li>
-        
-
-            
-            <a href="#">Deploy<i class="iconfont icon-arrow-right pull-right"></i></a>
-            
-
-            
-<ul class="sidebar-submenu">
-    
-
-    <li>
-        
-            <a href="/docs/skywalking-rover/next/en/setup/examples/deploy/kubernetes/readme">Deploy on Kubernetes</a>
-        
-    </li>
-
-    
-
-</ul>
-
+            <a href="/docs/skywalking-rover/next/en/setup/configuration/profiling">Profiling</a>
         
     </li>
 
@@ -592,7 +517,7 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
   })()
 </script>
 
-                  <div class="commit-id">Commit Id: d3a0f87</div>
+                  <div class="commit-id">Commit Id: dabe462</div>
                 
 
 
@@ -622,9 +547,9 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
 
 
-	<h1 id="logger-module">Logger Module</h1>
-<p>Logger module is used to configure the system log.</p>
-<h2 id="configuration">Configuration</h2>
+	<h1 id="common-configuration">Common configuration</h1>
+<h2 id="logger">Logger</h2>
+<p>Logger is used to configure the system log.</p>
 <table>
 <thead>
 <tr>
@@ -640,6 +565,75 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 <td>INFO</td>
 <td>ROVER_LOGGER_LEVEL</td>
 <td>The lowest level of printing allowed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="core">Core</h2>
+<p>Core is used to communicate with the backend server.
+It provides APIs for other modules to establish connections with the backend.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+<th>Environment Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>core.cluster_name</td>
+<td></td>
+<td>ROVER_CORE_CLUSTER_NAME</td>
+<td>The name of the cluster.</td>
+</tr>
+<tr>
+<td>core.backend.addr</td>
+<td>localhost:11800</td>
+<td>ROVER_BACKEND_ADDR</td>
+<td>The backend server address.</td>
+</tr>
+<tr>
+<td>core.backend.enable_TLS</td>
+<td>false</td>
+<td>ROVER_BACKEND_ENABLE_TLS</td>
+<td>The TLS switch.</td>
+</tr>
+<tr>
+<td>core.backend.client_pem_path</td>
+<td>client.pem</td>
+<td>ROVER_BACKEND_PEM_PATH</td>
+<td>The file path of client.pem. The config only works when opening the TLS switch.</td>
+</tr>
+<tr>
+<td>core.backend.client_key_path</td>
+<td>client.key</td>
+<td>ROVER_BACKEND_KEY_PATH</td>
+<td>The file path of client.key. The config only works when opening the TLS switch.</td>
+</tr>
+<tr>
+<td>core.backend.insecure_skip_verify</td>
+<td>false</td>
+<td>ROVER_BACKEND_INSECURE_SKIP_VERIFY</td>
+<td>InsecureSkipVerify controls whether a client verifies the server&rsquo;s certificate chain and host name.</td>
+</tr>
+<tr>
+<td>core.backend.ca_pem_path</td>
+<td>ca.pem</td>
+<td>ROVER_BACKEND_CA_PEM_PATH</td>
+<td>The file path oca.pem. The config only works when opening the TLS switch.</td>
+</tr>
+<tr>
+<td>core.backend.check_period</td>
+<td>5</td>
+<td>ROVER_BACKEND_CHECK_PERIOD</td>
+<td>How frequently to check the connection(second).</td>
+</tr>
+<tr>
+<td>core.backend.authentication</td>
+<td></td>
+<td>ROVER_BACKEND_AUTHENTICATION</td>
+<td>The auth value when send request.</td>
 </tr>
 </tbody>
 </table>
@@ -675,6 +669,17 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
 
 
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#common-configuration">Common configuration</a>
+      <ul>
+        <li><a href="#logger">Logger</a></li>
+        <li><a href="#core">Core</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -788,12 +793,6 @@ Configuration    Name Default Environment Key Description     logger.level INFO 
 
     </div>
     
-
-
-
-
-
-
 
 
 
