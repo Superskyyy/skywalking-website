@@ -30,31 +30,31 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<title>Query Streams | Apache SkyWalking</title><meta property="og:title" content="Query Streams" />
-<meta property="og:description" content="Query Streams Query operation queries the data in a stream.
+<title>CRUD [IndexRules](../../../../concept/data-model#indexrule--indexrulebinding) | Apache SkyWalking</title><meta property="og:title" content="CRUD [IndexRules](../../../../concept/data-model#indexrule--indexrulebinding)" />
+<meta property="og:description" content="CRUD IndexRules CRUD operations create, read, update and delete index rules.
+IndexRule defines how to generate indices based on tags and the index type. IndexRule should bind to a subject(stream or measure) through an IndexRuleBinding to generate proper indices.
 bydbctl is the command line tool in examples.
-The input contains two parts:
- Request: a YAML-based text which is defined by the API Time Range: YAML and CLI&rsquo;s flags both support it.  Time Range The query specification contains time_range field. The request should set absolute times to it. bydbctl also provides start and end flags to support passing absolute and relative times." />
+Create operation Create operation adds a new index rule to the database&rsquo;s metadata registry repository. If the index rule does not currently exist, create operation will create the schema." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/docs/skywalking-banyandb/next/crud/stream/query/" />
+<meta property="og:url" content="/docs/skywalking-banyandb/next/interacting/bydbctl/schema/index-rule/" />
 
-<meta itemprop="name" content="Query Streams">
-<meta itemprop="description" content="Query Streams Query operation queries the data in a stream.
+<meta itemprop="name" content="CRUD [IndexRules](../../../../concept/data-model#indexrule--indexrulebinding)">
+<meta itemprop="description" content="CRUD IndexRules CRUD operations create, read, update and delete index rules.
+IndexRule defines how to generate indices based on tags and the index type. IndexRule should bind to a subject(stream or measure) through an IndexRuleBinding to generate proper indices.
 bydbctl is the command line tool in examples.
-The input contains two parts:
- Request: a YAML-based text which is defined by the API Time Range: YAML and CLI&rsquo;s flags both support it.  Time Range The query specification contains time_range field. The request should set absolute times to it. bydbctl also provides start and end flags to support passing absolute and relative times.">
+Create operation Create operation adds a new index rule to the database&rsquo;s metadata registry repository. If the index rule does not currently exist, create operation will create the schema.">
 
-<meta itemprop="wordCount" content="288">
+<meta itemprop="wordCount" content="372">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Query Streams"/>
-<meta name="twitter:description" content="Query Streams Query operation queries the data in a stream.
+<meta name="twitter:title" content="CRUD [IndexRules](../../../../concept/data-model#indexrule--indexrulebinding)"/>
+<meta name="twitter:description" content="CRUD IndexRules CRUD operations create, read, update and delete index rules.
+IndexRule defines how to generate indices based on tags and the index type. IndexRule should bind to a subject(stream or measure) through an IndexRuleBinding to generate proper indices.
 bydbctl is the command line tool in examples.
-The input contains two parts:
- Request: a YAML-based text which is defined by the API Time Range: YAML and CLI&rsquo;s flags both support it.  Time Range The query specification contains time_range field. The request should set absolute times to it. bydbctl also provides start and end flags to support passing absolute and relative times."/>
+Create operation Create operation adds a new index rule to the database&rsquo;s metadata registry repository. If the index rule does not currently exist, create operation will create the schema."/>
 
 
 
@@ -72,7 +72,7 @@ The input contains two parts:
 
 
 
-    <title>Query Streams | Apache SkyWalking</title>
+    <title>CRUD [IndexRules](../../../../concept/data-model#indexrule--indexrulebinding) | Apache SkyWalking</title>
   </head>
   <body class="td-page  project-doc">
     <header>
@@ -426,41 +426,9 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/clients">Clients</a>
-        
-    </li>
-
-    
-
-    <li>
-        
-            <a href="">Insert and Update Data</a>
-        
-    </li>
-
-    
-
-    <li>
-        
-            <a href="">Querying Data</a>
-        
-    </li>
-
-    
-
-    <li>
-        
-            <a href="">Deleting Data</a>
-        
-    </li>
-
-    
-
-    <li>
-        
 
             
-            <a href="#">CRUD Operations<i class="iconfont icon-arrow-right pull-right"></i></a>
+            <a href="#">CLI<i class="iconfont icon-arrow-right pull-right"></i></a>
             
 
             
@@ -469,7 +437,7 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/group">Group</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/bydbctl">bydbctl</a>
         
     </li>
 
@@ -479,7 +447,7 @@ The input contains two parts:
         
 
             
-            <a href="#">Measure<i class="iconfont icon-arrow-right pull-right"></i></a>
+            <a href="#">CRUD Schema<i class="iconfont icon-arrow-right pull-right"></i></a>
             
 
             
@@ -488,7 +456,7 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/measure/schema">Schema</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/schema/group">Group</a>
         
     </li>
 
@@ -496,7 +464,31 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/measure/query">Query</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/schema/measure">Measure</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/schema/stream">Stream</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/schema/index-rule">IndexRule</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/schema/index-rule-binding">IndexRuleBinding</a>
         
     </li>
 
@@ -513,7 +505,7 @@ The input contains two parts:
         
 
             
-            <a href="#">Stream<i class="iconfont icon-arrow-right pull-right"></i></a>
+            <a href="#">Querying Data<i class="iconfont icon-arrow-right pull-right"></i></a>
             
 
             
@@ -522,7 +514,7 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/stream/schema">Schema</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/query/measure">Measure</a>
         
     </li>
 
@@ -530,7 +522,15 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/stream/query">Query</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/query/stream">Stream</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/query/filter-operation">Filter Operation</a>
         
     </li>
 
@@ -545,7 +545,14 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/index_rule">IndexRule</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/bydbctl/property">CRUD Property</a>
+        
+    </li>
+
+    
+
+</ul>
+
         
     </li>
 
@@ -553,7 +560,7 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/index_rule_binding">IndexRuleBinding</a>
+            <a href="/docs/skywalking-banyandb/next/interacting/java-client">Java Client</a>
         
     </li>
 
@@ -561,7 +568,142 @@ The input contains two parts:
 
     <li>
         
-            <a href="/docs/skywalking-banyandb/next/crud/property">Property</a>
+
+            
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui">Web UI<i class="iconfont icon-arrow-right pull-right"></i></a>
+            
+
+            
+<ul class="sidebar-submenu">
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/dashboard">Dashboard</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+
+            
+            <a href="#">CRUD Schema<i class="iconfont icon-arrow-right pull-right"></i></a>
+            
+
+            
+<ul class="sidebar-submenu">
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/schema/group">Group</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/schema/measure">Measure</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/schema/stream">Stream</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/schema/index-rule">IndexRule</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/schema/index-rule-binding">IndexRuleBinding</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/schema/top-n-aggregation">Top N Aggregation</a>
+        
+    </li>
+
+    
+
+</ul>
+
+        
+    </li>
+
+    
+
+    <li>
+        
+
+            
+            <a href="#">Querying Data<i class="iconfont icon-arrow-right pull-right"></i></a>
+            
+
+            
+<ul class="sidebar-submenu">
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/query/measure">Measure</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/query/stream">Stream</a>
+        
+    </li>
+
+    
+
+</ul>
+
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/web-ui/property">CRUD Property</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="/docs/skywalking-banyandb/next/interacting/java-client">Java Client</a>
+        
+    </li>
+
+    
+
+    <li>
+        
+            <a href="">Web UI</a>
         
     </li>
 
@@ -786,7 +928,7 @@ The input contains two parts:
   })()
 </script>
 
-                  <div class="commit-id">Commit Id: f354d0a</div>
+                  <div class="commit-id">Commit Id: 4588b55</div>
                 
 
 
@@ -810,52 +952,80 @@ The input contains two parts:
 
 
 
-	<h1 id="query-streams">Query Streams</h1>
-<p>Query operation queries the data in a stream.</p>
-<p><a href="../../../clients#command-line"><code>bydbctl</code></a> is the command line tool in examples.</p>
-<p>The input contains two parts:</p>
-<ul>
-<li>Request: a YAML-based text which is defined by the <a href="#api-reference">API</a></li>
-<li>Time Range: YAML and CLI&rsquo;s flags both support it.</li>
-</ul>
-<h2 id="time-range">Time Range</h2>
-<p>The query specification contains <code>time_range</code> field. The request should set absolute times to it.
-<code>bydbctl</code> also provides <code>start</code> and <code>end</code> flags to support passing absolute and relative times.</p>
-<p>&ldquo;start&rdquo; and &ldquo;end&rdquo; specify a time range during which the query is performed, they can be an absolute time like <a href="https://www.rfc-editor.org/rfc/rfc3339">&ldquo;2006-01-02T15:04:05Z07:00&rdquo;</a>,
-or relative time (to the current time) like &ldquo;-30m&rdquo;, or &ldquo;30m&rdquo;.
-They are both optional and their default values follow the rules below:</p>
-<ul>
-<li>when &ldquo;start&rdquo; and &ldquo;end&rdquo; are both absent, &ldquo;start = now - 30 minutes&rdquo; and &ldquo;end = now&rdquo;,
-namely past 30 minutes;</li>
-<li>when &ldquo;start&rdquo; is absent and &ldquo;end&rdquo; is present, this command calculates &ldquo;start&rdquo; (minus 30 units),
-e.g. &ldquo;end = 2022-11-09T12:34:00Z&rdquo;, so &ldquo;start = end - 30 minutes = 2022-11-09T12:04:00Z&rdquo;;</li>
-<li>when &ldquo;start&rdquo; is present and &ldquo;end&rdquo; is absent, this command calculates &ldquo;end&rdquo; (plus 30 units),
-e.g. &ldquo;start = 2022-11-09T12:04:00Z&rdquo;, so &ldquo;end = start + 30 minutes = 2022-11-09T12:34:00Z&rdquo;.</li>
-</ul>
-<h2 id="examples">Examples</h2>
-<p>To retrieve elements in a stream named <code>sw</code> between <code>2022-10-15T22:32:48Z</code> and <code>2022-10-15T23:32:48Z</code> could use the below command. These elements also choose a tag <code>trace_id</code> which lives in a family named <code>searchable</code>.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl stream query -f - <span style="color:#d14">&lt;&lt;EOF
-</span><span style="color:#d14">groups: [&#34;stream-segment&#34;]
-</span><span style="color:#d14">name: &#34;segment&#34;
-</span><span style="color:#d14">projection:
-</span><span style="color:#d14">  tagFamilies:
-</span><span style="color:#d14">    - name: &#34;searchable&#34;
-</span><span style="color:#d14">      tags: [&#34;trace_id&#34;]
-</span><span style="color:#d14">timeRange:
-</span><span style="color:#d14">  begin: 2022-10-15T22:32:48+08:00
-</span><span style="color:#d14">  end: 2022-10-15T23:32:48+08:00
+	<h1 id="crud-indexrulesconceptdata-modelindexrule--indexrulebinding">CRUD <a href="../../../../concept/data-model#indexrule--indexrulebinding">IndexRules</a></h1>
+<p>CRUD operations create, read, update and delete index rules.</p>
+<p>IndexRule defines how to generate indices based on tags and the index type.
+IndexRule should bind to a subject(stream or measure) through an IndexRuleBinding to generate proper indices.</p>
+<p><a href="../../bydbctl">bydbctl</a> is the command line tool in examples.</p>
+<h2 id="create-operation">Create operation</h2>
+<p>Create operation adds a new index rule to the database&rsquo;s metadata registry repository. If the index rule does not currently exist, create operation will create the schema.</p>
+<h3 id="examples-of-creating">Examples of creating</h3>
+<p>An index rule belongs to its subjects' group. We should create such a group if there is no such group.</p>
+<p>The command supposes that the index rule will bind to streams. So it creates a <code>CATALOG_STREAM</code> group here.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl group create -f - <span style="color:#d14">&lt;&lt;EOF
+</span><span style="color:#d14">metadata:
+</span><span style="color:#d14">  name: sw_stream
+</span><span style="color:#d14">catalog: CATALOG_STREAM
+</span><span style="color:#d14">resource_opts:
+</span><span style="color:#d14">  shard_num: 2
+</span><span style="color:#d14">  segment_interval:
+</span><span style="color:#d14">    unit: UNIT_DAY
+</span><span style="color:#d14">    num: 1
+</span><span style="color:#d14">  ttl:
+</span><span style="color:#d14">    unit: UNIT_DAY
+</span><span style="color:#d14">    num: 7
 </span><span style="color:#d14">EOF</span>
-</code></pre></div><p>The below command could query data in the last 30 minutes using relative time duration :</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl stream query --start -30m -f - <span style="color:#d14">&lt;&lt;EOF
-</span><span style="color:#d14">groups: [&#34;stream-segment&#34;]
-</span><span style="color:#d14">name: &#34;segment&#34;
-</span><span style="color:#d14">projection:
-</span><span style="color:#d14">  tagFamilies:
-</span><span style="color:#d14">    - name: &#34;searchable&#34;
-</span><span style="color:#d14">      tags: [&#34;trace_id&#34;]
+</code></pre></div><p>The group creates two shards to store indexRule data points. Every day, it would create a
+segment that will generate a block every 2 hours.</p>
+<p>The data in this group will keep 7 days.</p>
+<p>Then, the next command will create a new index rule:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl indexRule create -f - <span style="color:#d14">&lt;&lt;EOF
+</span><span style="color:#d14">metadata:
+</span><span style="color:#d14">  name: trace_id
+</span><span style="color:#d14">  group: sw_stream
+</span><span style="color:#d14">tags:
+</span><span style="color:#d14">- trace_id
+</span><span style="color:#d14">type: TYPE_INVERTED
 </span><span style="color:#d14">EOF</span>
+</code></pre></div><p>This YAML creates an index rule which uses the tag <code>trace_id</code> to generate a <code>TYPE_INVERTED</code> index.</p>
+<p>The <code>analyzer</code> field is optional. If it is not set, the default value is <code>ANALYZER_UNSPECIFIED</code>.
+We can set it to <code>ANALYZER_KEYWORD</code> to specify the analyzer. More analyzers can refer to the <a href="../../../../api-reference#indexruleanalyzer">API Reference</a>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl indexRule create -f - <span style="color:#d14">&lt;&lt;EOF
+</span><span style="color:#d14">metadata:
+</span><span style="color:#d14">  name: trace_id
+</span><span style="color:#d14">  group: sw_stream
+</span><span style="color:#d14">tags:
+</span><span style="color:#d14">- trace_id
+</span><span style="color:#d14">type: TYPE_INVERTED
+</span><span style="color:#d14">analyzer: ANALYZER_KEYWORD
+</span><span style="color:#d14">EOF</span>
+</code></pre></div><h2 id="get-operation">Get operation</h2>
+<p>Get(Read) operation gets an index rule&rsquo;s schema.</p>
+<h3 id="examples-of-getting">Examples of getting</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl indexRule get -g sw_stream -n trace_id
+</code></pre></div><h2 id="update-operation">Update operation</h2>
+<p>Update operation updates an index rule&rsquo;s schema.</p>
+<h3 id="examples-of-updating">Examples of updating</h3>
+<p>This example changes the type from <code>TREE</code> to <code>INVERTED</code>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl indexRule update -f - <span style="color:#d14">&lt;&lt;EOF
+</span><span style="color:#d14">metadata:
+</span><span style="color:#d14">  name: trace_id
+</span><span style="color:#d14">  group: sw_stream
+</span><span style="color:#d14">tags:
+</span><span style="color:#d14">- trace_id
+</span><span style="color:#d14">type: TYPE_INVERTED
+</span><span style="color:#d14">EOF</span>
+
+</code></pre></div><h2 id="delete-operation">Delete operation</h2>
+<p>Delete operation deletes an index rule&rsquo;s schema.</p>
+<h3 id="examples-of-deleting">Examples of deleting</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl indexRule delete -g sw_stream -n trace_id
+</code></pre></div><h2 id="list-operation">List operation</h2>
+<p>List operation list all index rules' schema in a group.</p>
+<h3 id="examples-of-listing">Examples of listing</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bydbctl indexRule list -g sw_stream
 </code></pre></div><h2 id="api-reference">API Reference</h2>
-<p><a href="../../../api-reference#streamservice">StreamService v1</a></p>
+<p><a href="../../../../api-reference#indexruleregistryservice">IndexRule Registration Operations</a></p>
 
 
 
@@ -891,10 +1061,33 @@ e.g. &ldquo;start = 2022-11-09T12:04:00Z&rdquo;, so &ldquo;end = start + 30 minu
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#query-streams">Query Streams</a>
+    <li><a href="#crud-indexrulesconceptdata-modelindexrule--indexrulebinding">CRUD <a href="../../../../concept/data-model#indexrule--indexrulebinding">IndexRules</a></a>
       <ul>
-        <li><a href="#time-range">Time Range</a></li>
-        <li><a href="#examples">Examples</a></li>
+        <li><a href="#create-operation">Create operation</a>
+          <ul>
+            <li><a href="#examples-of-creating">Examples of creating</a></li>
+          </ul>
+        </li>
+        <li><a href="#get-operation">Get operation</a>
+          <ul>
+            <li><a href="#examples-of-getting">Examples of getting</a></li>
+          </ul>
+        </li>
+        <li><a href="#update-operation">Update operation</a>
+          <ul>
+            <li><a href="#examples-of-updating">Examples of updating</a></li>
+          </ul>
+        </li>
+        <li><a href="#delete-operation">Delete operation</a>
+          <ul>
+            <li><a href="#examples-of-deleting">Examples of deleting</a></li>
+          </ul>
+        </li>
+        <li><a href="#list-operation">List operation</a>
+          <ul>
+            <li><a href="#examples-of-listing">Examples of listing</a></li>
+          </ul>
+        </li>
         <li><a href="#api-reference">API Reference</a></li>
       </ul>
     </li>
@@ -1013,6 +1206,34 @@ e.g. &ldquo;start = 2022-11-09T12:04:00Z&rdquo;, so &ldquo;end = start + 30 minu
 
     </div>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
