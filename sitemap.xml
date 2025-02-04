@@ -10909,12 +10909,6 @@
   </url>
   
   <url>
-    <loc>/docs/main/next/en/concepts-and-designs/mal/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/docs/main/v9.0.0/en/concepts-and-designs/mal/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -11065,12 +11059,6 @@
   </url>
   
   <url>
-    <loc>/docs/main/next/en/concepts-and-designs/meter/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/docs/main/v9.0.0/en/concepts-and-designs/meter/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -11114,6 +11102,12 @@
   
   <url>
     <loc>/docs/main/v9.7.0/en/concepts-and-designs/meter/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/docs/main/next/en/concepts-and-designs/mal/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
