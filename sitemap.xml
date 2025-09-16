@@ -7192,6 +7192,12 @@
   </url>
   
   <url>
+    <loc>/docs/skywalking-banyandb/next/operation/disk-management/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/docs/</loc>
     <lastmod>2024-02-21T02:43:50-05:00</lastmod>
     <changefreq>daily</changefreq>
