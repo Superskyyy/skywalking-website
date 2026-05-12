@@ -4213,6 +4213,12 @@
   </url>
   
   <url>
+    <loc>/docs/main/next/en/setup/backend/admin-api/admin-ui/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/docs/main/latest/en/setup/backend/advanced-deployment/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -8833,12 +8839,6 @@
   </url>
   
   <url>
-    <loc>/docs/main/next/en/status/query_alarm_runtime_status/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/docs/skywalking-banyandb/latest/installation/binaries/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -8852,18 +8852,6 @@
   
   <url>
     <loc>/docs/skywalking-banyandb/v0.5.0/installation/binaries/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/main/next/en/status/query_ttl_setup/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/main/next/en/status/query_cluster_nodes/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -9884,6 +9872,12 @@
   
   <url>
     <loc>/docs/main/v9.7.0/en/setup/backend/backend-init-mode/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/docs/main/next/en/setup/backend/admin-api/inspect/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -16490,6 +16484,12 @@
   </url>
   
   <url>
+    <loc>/docs/main/next/en/setup/backend/admin-api/status/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/docs/main/next/en/status/status_apis/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -16791,6 +16791,12 @@
   
   <url>
     <loc>/docs/main/next/en/swip/swip-13/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/docs/main/next/en/swip/swip-14/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
