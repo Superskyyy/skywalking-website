@@ -6333,6 +6333,12 @@
   </url>
   
   <url>
+    <loc>/docs/skywalking-banyandb/next/design/fodc/context-aware-panic-diagnostics/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/docs/main/latest/en/setup/backend/backend-continuous-profiling/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
