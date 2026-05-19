@@ -4213,12 +4213,6 @@
   </url>
   
   <url>
-    <loc>/docs/main/next/en/setup/backend/admin-api/admin-ui/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/docs/main/latest/en/setup/backend/advanced-deployment/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -10003,12 +9997,6 @@
   </url>
   
   <url>
-    <loc>/docs/main/next/en/ui/readme/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/docs/main/v9.0.0/en/ui/readme/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -13460,12 +13448,6 @@
   
   <url>
     <loc>/docs/main/latest/en/faq/maven-compile-npm-failure/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/main/next/en/faq/maven-compile-npm-failure/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17776,6 +17758,18 @@
   
   <url>
     <loc>/docs/main/v9.7.0/en/setup/backend/ui-setup/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/docs/main/next/en/ui/readme/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/docs/main/next/en/setup/backend/admin-api/ui-management/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
